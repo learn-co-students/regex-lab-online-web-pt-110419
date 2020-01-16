@@ -1,4 +1,6 @@
+
 require "pry"
+
 
 def starts_with_a_vowel?(word)
 if word.match(/^[aeiouAEIOU]\w+/)
@@ -29,9 +31,10 @@ end
 
 
 def valid_phone_number?(phone)
- if phone.scan(/\.*.\d\d\d.\d\d\d.\d\d\d\d*/) 
+ if phone.match(/\.*.\d\d\d.\d\d\d.\d\d\d\d*/) 
     return true 
  else
     return false 
+
 end
 end
