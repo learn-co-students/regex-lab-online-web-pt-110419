@@ -31,10 +31,11 @@ end
 
 
 def valid_phone_number?(phone)
- if phone.match(/\.*.\d\d\d.\d\d\d.\d\d\d\d*/) 
-    return true 
- else
-    return false 
+        binding.pry
+ if phone.match(/\.*.\d\d\d.\d\d\d.\d\d\d\d*/)
 
+   return true 
+else
+    return false 
 end
 end
